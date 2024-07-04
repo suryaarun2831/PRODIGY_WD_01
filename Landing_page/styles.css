@@ -1,0 +1,260 @@
+:root
+{
+    --primary-color:black;
+    --primary-color-light:rgb(22, 22, 22);
+    --max-width: 1200px;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color:darkgray;
+}
+.header
+{
+    height: 80px;
+    width: 100%;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .5px solid grey;
+    background-color:rgb(14, 14, 7);
+    font-size: 18px;
+    position: fixed;
+    z-index: 1000;
+}
+.nav_logo p
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 30px;
+}
+.nav_links
+{
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}
+.nav_links li
+{
+    margin-right: 50px;
+    list-style-type:none;
+}
+.nav_links li a,.nav_logo a
+{
+    color: white;
+    text-decoration: none;
+}
+.nav_links li a:hover
+{
+    text-decoration: underline;
+    color:rgb(189, 216, 35);
+}
+.Home,.About_us,.Contact
+{
+    padding: 12rem 5rem;
+}
+.home_div
+{
+    background-image: url('./building.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+.Discover,.Journals
+{
+    padding: 7rem 5rem;
+}
+.About_us
+{
+    display: flex;
+}
+.Discover
+{
+    background-image: url('./beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+.Home h1,.About_us h1{
+    margin-bottom: 1rem;
+    max-width: 600px;
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.Home h4{
+    position: relative;
+    margin-left: 3px;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    max-width: 700px;
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.Home h4::after{
+    position: absolute;
+    content:"";
+    left:-3rem;
+    top:50%;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 2rem;
+    background-color: white;
+}
+.btn
+{
+    width: 130px;
+    height: 40px;
+    padding: auto;
+    background-color: rgb(189, 189, 39);
+}
+.About_us p,.Journals h1
+{
+    max-width: 700px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+div .image_about{
+    width: 450px;
+    height: 450px;
+    background-image: url('./mountains.jpg');
+    background-size: cover;
+    margin-left: 5rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(2px);
+}
+.Discover h1
+{
+    font-size: 3rem;
+}
+.Discover .places,.Journals .places
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.Discover .destination
+{
+    width: 400px;
+    height: 450px;
+    border: .5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color:darkgrey;
+}
+.Discover .destination p
+{
+    margin-top: 15px;
+}
+.Discover .destination .image_1
+{
+    width: 100%;
+    height:230px;
+    background-image: url('./chennai.jpg');
+    box-sizing: border-box;
+    background-size: cover;
+}
+.Discover .destination .image_2
+{
+    width: 100%;
+    height:230px;
+    background-image: url('./mumbai.png');
+
+    background-size: cover;
+}
+.Discover .destination .image_3
+{
+    width: 100%;
+    height:230px;
+    background-image: url('./varkala-beach.jpg');
+    background-size: cover;
+}
+.Discover .explore_btn
+{
+    width: 130px;
+    height: 40px;
+    padding: auto;
+    background-color: grey;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+.Discover
+{
+    font-family:'Times New Roman', Times, serif
+}
+.Journals .destination
+{
+    width: 420px;
+    height: 450px;
+    padding: 10px;
+}
+.Journals
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Journals .destination p
+{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.Journals .destination .image_1
+{
+    width: 100%;
+    height:230px;
+    border:.5px solid rgb(83, 79, 79);
+    box-sizing: border-box;
+    background-image: url('./Best_travel_accessories_for_men_6c82dbf030.webp');
+    background-size: cover;
+}
+.Journals .destination .image_2
+{
+    width: 100%;
+    height:230px;
+    border:.5px solid rgb(59, 56, 56);
+    background-image: url('./hiking-view-fitness-with-couple-mountains-health-exercise-sightseeing-together-summer-earth-nature-travel-with-man-woman-holding-hands-mountain-trail-peak_590464-99284.avif');
+    box-sizing: border-box;
+    background-size: cover;
+}
+.Journals .destination .image_3
+{
+    width: 100%;
+    height:230px;
+    border:.5px solid rgb(51, 49, 49);
+    background-image: url('./unnamed-3-5.png');
+    box-sizing: border-box;
+    background-size: cover;
+}
+.Journals .destination .share_link
+{
+    margin-top: 30px;
+}
+.Journals .btn
+{
+    margin-top: 10px;
+    background-color:transparent;
+    font-size: 18px;
+}
+.Contact
+{
+    text-align: center;
+}
+.contact_col
+{
+    font-size: 20px;
+}
+.Contact a
+{
+    color: black;
+    text-decoration: none;
+}
+.Contact .a:hover
+{
+    color: yellow;
+}
